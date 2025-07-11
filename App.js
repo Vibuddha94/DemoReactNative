@@ -1,14 +1,20 @@
 import { NewAppScreen } from '@react-native/new-app-screen';
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
 import Home from './src/screens/Home/Home';
+import Login from './src/screens/Login/Login';
+import Register from './src/screens/Register/Register';
+import PaperCom from './src/screens/PaperCom/PaperCom';
+import AxiosCom from './src/screens/AxiosCom/AxiosCom';
 
 function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-
   return (
     <View style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Home />
+      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
+      {/* <Home /> */}
+      {/* <Login /> */}
+      {/* <Register /> */}
+      {/* <PaperCom /> */}
+      <AxiosCom />
     </View>
   );
 }
